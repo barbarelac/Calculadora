@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pr-br"></html>
+<html>
+    <head>
+        <link rel="stylesheet" type= "text/css" href="../css/cal.css">
+        <meta charset="utf-8">
+        <title>CALCULADORA</title>
+    </head>
+    <body>
+        <div style="width:100%;" align = "center">
+            <div style= "border: thin solid #999999; margin-top: 170px; width: 400px; background-color: #ffffff;border-radius:10px;box-shadow: 2px 2px 0px 0px #999;">
+                <div style="margin: 15px;">
+                    <input type="text" name="display" id="display"  disabled placeholder="Calculadora da Bárbara" style="width: 100%; height:50px; text-align: center;">      
+                </div> 
+                <div style="margin: 15px;">
+                <table style="width: 100%;" id="tabCalculadora">
+
+                        <tr>  
+                            <td><button style="width: 100%;"onclick="concatenar ('1')">1</button></td>  
+                            <td><button style="width: 100%;"onclick="concatenar ('2')">2</button></td>
+                            <td><button style="width: 50%;"onclick="concatenar  ('3')">3</button></td>    
+                            <td><button style="width: 100%;"onclick="operacao   ('/')" >÷</button></td> 
+                        </tr>
+                        <tr>  
+                            <td><button style="width: 100%;"onclick="concatenar ('4')">4</button></td>     
+                            <td><button style="width: 100%;"onclick="concatenar ('5')">5</button></td>    
+                            <td><button style="width: 50%;"onclick="concatenar  ('6')">6</button></td> 
+                            <td><button style="width: 100%;"onclick="operacao   ('*')">x</button></td> 
+                        </tr>
+                        <tr> 
+                            <td><button style="width: 100%;"onclick="concatenar ('7')">7</button></td>  
+                            <td><button style="width: 100%;"onclick="concatenar ('8')">8</button></td>  
+                            <td><button style="width: 50%;"onclick="concatenar  ('9')">9</button></td>   
+                            <td><button style="width: 100%;"onclick="operacao   ('+')">+</button></td> 
+                         </tr>
+                        <tr> 
+                            <td><button style="width: 100%;" onclick="resultado ()">=</button></td>
+                            <td><button style="width: 100%;"onclick="concatenar ('0')">0</button></td>   
+                            <td><button style="width: 50%;"onclick="limpar ()">Limpar</button></td> 
+                            <td><button style="width: 100%;"onclick="operacao   ('-')">-</button></td>
+                        </tr>
+                     
+                     </table>
+                </div>
+            
+            </div>
+           
+
+
+        </div>
+       
+         <!--
+        <input type="text" id="N1"/>
+        <input type="text" id="N2"/>
+
+        <select name="op" id="op">
+            <option value ="somar">somar</option>
+            <option value ="subtrair">subtrair</option>
+            <option value ="multiplicar">multiplicar</option>
+            <option value ="dividir">dividir</option>
+        </select>
+
+
+        <input type="submit" onclick="calculadora()" value= "Calcular"/>
+        -->
+
+        <script type="text/javascript" src= "../js/cal.js"></script>
+
+    </body>
+</html>
